@@ -1,0 +1,377 @@
+body{
+    background-color: #534340;
+    display: flex;
+    flex-direction: column; 
+    justify-content : center;
+    font-family: 'Kanit', sans-serif;
+
+}
+.p-produit{
+    font-size: 25px;
+    font-weight: 600px;
+  }
+header{
+    color: azure;
+    text-shadow: 2px 2px 4px #000000;  
+    background: url(img/buches.jpg) no-repeat center; 
+    width: auto;
+
+}
+
+.titre{
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+    font-size: 100px;
+    padding: 2.5%;
+}
+
+.sous-titre{
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+    color: #fff;
+    padding: 2.5%;
+    font-size: 50px;
+}
+.sous-titre2{
+  text-align: center;
+  font-family: 'Anton', sans-serif;
+  color: #fff;
+  padding: 4%;
+  font-size: 25px;
+}
+
+.box1{
+  
+    width: auto;
+    height: 200px;
+    font-family: 'Anton', sans-serif;
+    font-size: 30px;
+    margin: 5%;
+    margin-top: 35%;
+}
+
+
+.box2{
+    background-color: #C5D8A4;
+    text-shadow: 2px 2px 4px #000000;
+    justify-content: space-between;
+    width: auto;
+    height: auto;
+}
+
+.box3{
+    display: flex;
+    flex-direction:row;
+    text-align: center;
+    margin-top: 5%;
+}
+
+.box3-1{
+    flex: 1;
+}
+
+.box3-2{
+    flex:2;
+    line-height: 100px;
+}
+
+.lienBlanc {
+  color:white;
+  font-size: 45px;
+}
+
+a{
+    color: #534340;
+    font-size: 30px;
+    font-family: 'Anton', sans-serif;
+} 
+nav{
+    word-spacing: 670px;
+    margin-left:50px ;
+    margin-right: 50px;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+footer {
+    background-color: #BB9981;
+    width: 100%
+}
+
+nav{
+    word-spacing: 280px;
+    margin-left: 30px;
+    font-size: 20px;
+}
+
+.mail,.adresse {
+    width: 52px;
+    height: 52px;
+}
+.tél{
+    width: 55px;
+    height: 55px;
+}
+
+.text{
+    color: #F4FCD9;
+    border-style: double;
+    border-radius: 2ch;
+    font-family: 'Anton', sans-serif;
+    padding: 10px;
+}
+
+
+
+.button {
+    background-color: #534340; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.box4{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.box4-1{
+    background-color: cornflowerblue;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    padding: 5%;
+   
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    margin-top: 2%;
+  }
+  .wrapper{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    /*background: linear-gradient(-135deg, #c850c0, #4158d0);*/
+    /* background: linear-gradient(375deg, #1cc7d0, #2ede98); */
+   /* background: linear-gradient(-45deg, #e3eefe 0%, #efddfb 100%);*/
+    /* clip-path: circle(25px at calc(0% + 45px) 45px); */
+    background: #BB9981;
+    clip-path: circle(25px at calc(100% - 45px) 45px);
+    transition: all 0.3s ease-in-out;
+  }
+  #active:checked ~ .wrapper{
+    clip-path: circle(75%);
+  }
+  .menu-btn{
+    position: absolute;
+    z-index: 2;
+    right: 20px;
+    /* left: 20px; */
+    top: 20px;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    /*background: linear-gradient(-135deg, #c850c0, #4158d0);*/
+    /* background: linear-gradient(375deg, #1cc7d0, #2ede98); */
+   /* background: linear-gradient(-45deg, #e3eefe 0%, #efddfb 100%); */
+    background: #C5D8A4;
+    transition: all 0.3s ease-in-out;
+  }
+  #active:checked ~ .menu-btn{
+    color: #fff;
+  }
+  #active:checked ~ .menu-btn i:before{
+    content: "\f00d";
+  }
+  .wrapper ul{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    list-style: none;
+    text-align: center;
+  }
+  .wrapper ul li{
+    margin: 15px 0;
+  }
+  .wrapper ul li a{
+    color: none;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 500;
+    padding: 5px 30px;
+    color: #fff;
+    border-radius: 50px;
+    background: #534340;
+    position: relative;
+    line-height: 50px;
+    transition: all 0.3s ease;
+  }
+  .wrapper ul li a:after{
+    position: absolute;
+    content: "";
+    background: #fff;
+    background: linear-gradient(#213529, #1e9243, #0eb40e);
+    background: linear-gradient(45deg, #213529, #2ede98);
+    width: 104%;
+    height: 110%;
+    left: -2%;
+    top: -5%; /* if the font is 'Oswald'*/
+    border-radius: 50px;
+    transform: scaleY(0);
+    z-index: -1;
+    animation: rotate 1.5s linear infinite;
+    transition: transform 0.3s ease;
+  }
+  .wrapper ul li a:hover:after{
+    transform: scaleY(1);
+  }
+  .wrapper ul li a:hover{
+    color: #C5D8A4;
+  }
+  input[type="checkbox"]{
+    display: none;
+  }
+  .content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    text-align: center;
+    width: 100%;
+    color: #202020;
+  }
+
+  .content2{
+    top: 50%;
+    left: 50%;
+    transform: translate(0%, -70%);
+    z-index: -1;
+    text-align: center;
+    width: 100%;
+    color: #202020;
+  }
+  .content .title{
+    font-size: 40px;
+    font-weight: 700;
+  }
+  .content p{
+    font-size: 35px;
+    font-weight: 600;
+  }
+  
+  @keyframes rotate {
+    0%{
+      filter: hue-rotate(0deg);
+    }
+    100%{
+      filter: hue-rotate(360deg);
+    }
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 220px;
+    grid-row-gap: 180px;
+    padding: 15%;
+    margin-top: 80vh;
+}
+.box{
+    background-color: #BB9981;
+    border-radius: 2%;
+    width: 250px;
+    height: 265px;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600);
+
+
+.promos {
+  width: 800px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+.promo {
+  width: 250px;
+  background: #C5D8A4; 
+  color: #000000;
+  float: left;
+}
+.deal {
+  padding: 10px 0 0 0;
+}
+.deal span {
+  display: block;
+  text-align: center;
+}
+.deal span:first-of-type {
+  font-size: 23px;  
+}
+.deal span:last-of-type {
+  font-size: 13px;
+}
+.promo .price {
+  display: block;
+  width: 250px;  
+  background: #BB9981;
+  margin: 15px 0 10px 0;
+  text-align: center;
+  font-size: 23px;
+  padding: 17px 0 17px 0;
+}
+ul {
+  display: block;
+  margin: 20px 0 10px 0;
+  padding: 0;
+  list-style-type: none;
+  text-align: center;
+  color: #000000;
+}
+li {
+  display: block;
+  margin: 10px 0 0 0;
+}
+button {
+  border: none;
+  border-radius: 40px;
+  background: #767402;
+  color: #000000;
+  padding: 10px 37px;
+  margin: 10px 0 20px 60px;
+}
+
+.scale button {
+  background: #767402;
+}
+.scale .price {
+  color: #C5D8A4;
+}
+.box5{
+  display: flex;
+  flex-direction:column;
+  justify-content: space-between;
+  text-align: center;
+  margin-top: -40%;
+}
+  
